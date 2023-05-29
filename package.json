@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/souravkl11/raganork-md.git"
+    "url": "git+https://github.com/TEAM-DLK/raganork-md.git"
   },
   "keywords": [
     "whatsapp",
@@ -17,7 +17,7 @@
   "author": "TEAM-DLK",
   "developer": "DJ DOOZY",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/souravkl11/raganork#readme",
+  "homepage": "https://github.com/TEAM-DLK/raganork#readme",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",
     "@whiskeysockets/baileys": "6.0.0",
