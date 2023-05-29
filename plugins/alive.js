@@ -84,7 +84,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
+  var _img = await skbuffer(`https://telegra.ph/file/dd9dc7c0ee18cf3cae10a.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
@@ -135,7 +135,7 @@ Module({
   const start = new Date().getTime()
   let sent_msg = await message.sendReply('*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*')
   const end = new Date().getTime()
-  await message.edit('*ʟᴀᴛᴇɴᴄʏ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
+  await message.edit('*ᴘɪɴɢ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
 }));
 Module({
   pattern: 'uptime',
