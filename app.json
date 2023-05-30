@@ -41,7 +41,7 @@
         "STICKER_DATA": {
             "description": "Name of stickers created using bot. Can also split using ;",
             "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ"
+            "value":"DLK-MD"
         },
         "CHATBOT": {
             "description": "AI chatbot",
@@ -51,7 +51,7 @@
         "BOT_NAME": {
             "description": "Name of AI chatbot",
             "required": true,
-            "value":"Raganork"
+            "value":"DLK-MD"
         },
         "BOT_INFO": {
             "description": "Name, image, owner and other details in menu (seperate with comma)",
