@@ -1,13 +1,13 @@
 {
-  "name": "raganork-md",
+  "name": "TEAM-DLK-MD",
   "version": "3.5.0",
-  "description": "Raganork whatsapp bot- Multi device version.",
+  "description": "TEAM-DLK-MD whatsapp bot- Multi device version.",
   "scripts": {
-    "start": "pm2 start . --attach --name Raganork"
+    "start": "pm2 start . --attach --name TEAM-DLK-MD"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TEAM-DLK/raganork-md.git"
+    "url": "git+https://github.com/TEAM-DLK/DLK-MD.git"
   },
   "keywords": [
     "whatsapp",
@@ -17,7 +17,7 @@
   "author": "TEAM-DLK",
   "developer": "DJ DOOZY",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/TEAM-DLK/raganork#readme",
+  "homepage": "https://github.com/TEAM-DLK/DLK-MD#readme",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",
     "@whiskeysockets/baileys": "6.0.0",
