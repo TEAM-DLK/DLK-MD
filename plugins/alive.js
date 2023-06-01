@@ -1,8 +1,4 @@
-/* Copyright (C) 2022 Sourav KL11.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-Raganork MD - Sourav KL11
-*/
+
 const {
   FancyRandom,
   getListFromCommand,
@@ -65,16 +61,13 @@ Module({
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
 ┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
-┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
-┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
-┃${star}│ _*Available RAM*_ : ${used} of ${total}
-┃${star}│ _*Version*_ : ${config.VERSION}
+┃${star}│ _*Ø₩₦ɆⱤ*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*Ʉ₴ɆⱤ*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ _*₥ØĐɆ*_ : ${MODE}
+┃${star}│ _*₴ɆⱤVɆⱤ*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*₳V₳łⱠ₳฿ⱠɆ Ɽ₳₥*_ : ${used} of ${total}
+┃${star}│ _*VɆⱤ₴łØ₦*_ : ${config.VERSION}
 ┃${star}│
-┃${star}│
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃${star}│   ${BOT_INFO.split(";")[0]}
 ┃${star}│ 
 ┃${star}╰───────────────
@@ -84,7 +77,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://telegra.ph/file/dd9dc7c0ee18cf3cae10a.jpg`)
+  var _img = await skbuffer(`https://i.imgur.com/LDDrAak.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
@@ -121,9 +114,9 @@ if (button) {
         text: FancyRandom('Ping!')
     })
     const end = new Date().getTime()
-    await message.sendReply(FancyRandom('Pong!\n ```' + (end - start) + '``` *ms*')) 
+    await message.sendReply(FancyRandom('₱Ø₦₲!\n ```' + (end - start) + '``` *ms*')) 
   }
-  if (button.includes(myid)&&button.startsWith("support")) return await message.sendReply(BOT_INFO.split(";")[4])
+  if (button.includes(myid)&&button.startsWith("₴Ʉ₱₱ØⱤ₮")) return await message.sendReply(BOT_INFO.split(";")[4])
 } 
 }))
 Module({
