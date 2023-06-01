@@ -85,22 +85,6 @@ Module({
     await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
 }))
 Module({
-    pattern: 'add ?(.*)',
-    fromMe: true,
-    desc: Lang.ADD_DESC,
-    warn:"You number might get banned, use with caution",
-    use: 'group'
-}, (async (message, match) => {
-    if (!message.isGroup) return await message.sendReply(Lang.GROUP_COMMAND)
-    var init = match[1] || message.reply_message.jid.split("@")[0]
-    if (!init) return await message.sendReply(Lang.NEED_USER)
-    var admin = await isAdmin(message);
-    if (!admin) return await message.sendReply(Lang.NOT_ADMIN)
-    var initt = init.split(" ").join("")
-    var user = initt.replace(/\+/g, '').replace(' ', '').replace(' ', '').replace(' ', '').replace(' ', '').replace(/\(/g, '').replace(/\)/g, '').replace(/-/g, '')
-    await message.client.groupAdd(user,message)
-}))
-Module({
     pattern: 'promote ?(.*)',
     fromMe: true,
     use: 'group',
