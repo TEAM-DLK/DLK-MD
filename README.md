@@ -8,14 +8,9 @@
 <div>
 <br>
 
-## Deploy to Heroku ↓
-
-<a href="https://github.com/sou6av/deploy-[raganork/fork](https://github.com/TEAM-DLK/DLK-MD)" target="blank"><img align="center" src="https://i.imgur.com/cxaSEWe.png" alt="Deploy bot" height="112" width="310" /></a>
-  <div>
-<br>
-<a href="https://raganork.ml/heroku-deploy" target="blank"><img align="center" src="https://i.imgur.com/6rs61MY.png" alt="Deploy bot" height="112" width="310" /></a>
-  <div>
-<br>
+- ### 🚀 Deploy To Heroku
+  
+  <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TEAM-DLK/DLK-MD"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-yellow?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 # Note
