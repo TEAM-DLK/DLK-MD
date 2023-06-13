@@ -81,7 +81,7 @@
         "ALIVE": {
             "description": "Alive message {image/link}, {sender} can also be used",
             "required": false,
-            "value":"https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \nUptime: {uptime}• \nTEAM-DLK-MD •*\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n*~____________________________________~"
+            "value":"https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}• \n\nTEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n*~____________________________________~*"
         },
        "SESSION": {
             "description": "Your MD session",
