@@ -1,5 +1,5 @@
-# _DLK-multi-device_
-
+# _Raganork-multi-device_
+## _Multi device whatsapp bot created with [@adiwajshing/baileys](https://github.com/adiwajshing/Baileys)_
   
 <div align="center">
    
@@ -8,10 +8,46 @@
 <div>
 <br>
 
-- ### 🚀 Deploy To Heroku
-  
-  <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TEAM-DLK/DLK-MD"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-yellow?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+## Deploy to Heroku ↓
 
+<a href="https://github.com/sou6av/deploy-raganork/fork" target="blank"><img align="center" src="https://i.imgur.com/cxaSEWe.png" alt="Deploy bot" height="112" width="310" /></a>
+  <div>
+<br>
+<a href="https://raganork.ml/heroku-deploy" target="blank"><img align="center" src="https://i.imgur.com/6rs61MY.png" alt="Deploy bot" height="112" width="310" /></a>
+  <div>
+<br>
+
+## Deploy to Koyeb ↓
+
+<a href="https://raganork.souravkl11.xyz/deploy" target="blank"><img align="center" src="https://i.imgur.com/PNoLtFq.png" alt="Deploy bot" height="112" width="310" /></a>
+  <div>
+<br>
+<div>
+  <br>
+
+## Deploy in VPS [linux] ↓
+<div align="left">
+
+```
+1. Install nodejs, git, ffmpeg
+2. npm i -g yarn pm2
+3. git clone https://github.com/souravkl11/raganork-md && cd raganork-md
+4. yarn install --ignore-engines --network-concurrency 1
+5. vi config.env
+6. Enter your session there in format 'SESSION=your_session_here'
+7. Press ctrl+c, then type ':wq' and press enter
+8. npm start
+
+Now the bot will start working
+```
+
+<div align="center">
+
+## _[Koyeb: How to deploy](https://github.com/souravkl11/raganork-md/wiki/Deploying-with-Koyeb)_
+
+## _[Basic usage helper](https://github.com/souravkl11/raganork-md/wiki/Raganork-Documentation)_
+
+<div align="left">
 
 # Note
 
