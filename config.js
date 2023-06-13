@@ -13,7 +13,15 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v3.0.0',
-    ALIVE: process.env.ALIVE || "https://telegra.ph/file/dd9dc7c0ee18cf3cae10a.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
+    ALIVE: process.env.ALIVE || "https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive 
+Uptime: {uptime}
+*~____________________________________~*
+BOT RUNTIME *• {uptime} •*
+*~____________________________________~*
+
+ UPDATE GROUP
+https://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY
+ *~____________________________________~*",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
@@ -34,7 +42,7 @@ module.exports = {
     SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
-    BOT_INFO: process.env.BOT_INFO || 'TEAM-DLK;DJ DOOZY;https://telegra.ph/file/dd9dc7c0ee18cf3cae10a.jpg;https://chat.whatsapp.com/JA7Mnre23WOJsbJUiTmj1t',
+    BOT_INFO: process.env.BOT_INFO || 'TEAM-DLK;DJ-DOOZY;94740811766;https://i.imgur.com/7sa8HlR.jpg;https://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '91,94,2',
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
@@ -42,7 +50,7 @@ module.exports = {
     HANDLERS: process.env.HANDLERS || '.,',
     STICKER_DATA: process.env.STICKER_DATA || "TEAM-DLK",
     BOT_NAME: process.env.BOT_NAME || 'DJ DOOZY',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'TEAM-DLK;DJ DOOZY;https://telegra.ph/file/dd9dc7c0ee18cf3cae10a.jpg' : process.env.AUDIO_DATA,
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'TEAM-DLK;DJ DOOZY;https://i.imgur.com/7sa8HlR.jpg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
     WARN: process.env.WARN || '4',
