@@ -116,7 +116,7 @@
         },
         "greetings": {
             "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
-            "NOT_SET_WELCOME": "_No welcome messages set! Check wiki: https://github.com/souravkl11/raganork-md/wiki/Welcome_",
+            "NOT_SET_WELCOME": "_No welcome messages set",
             "WELCOME_ALREADY_SETTED": "_Already set!_\n",
             "NEED_WELCOME_TEXT": "_Need a message._",
             "WELCOME_DELETED": "_Welcome disabled!_",
