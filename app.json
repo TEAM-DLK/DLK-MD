@@ -53,11 +53,6 @@
             "required": true,
             "value":"DLK-MD"
         },
-        "BOT_INFO": {
-            "description": "Name, image, owner and other details in menu (seperate with comma)",
-            "required": true,
-            "value":"TEAM-DLK;DJ-DOOZY;94740811766;https://i.imgur.com/7sa8HlR.jpg;https://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY"
-        },
         "AUDIO_DATA": {
             "description": "Name of audio (take) name;name;image(url)",
             "required": true,
