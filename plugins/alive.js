@@ -1,8 +1,3 @@
-/* Copyright (C) 2022 Sourav KL11.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-Raganork MD - Sourav KL11
-*/
 const {
   FancyRandom,
   getListFromCommand,
@@ -73,8 +68,6 @@ Module({
 ┃${star}│ _*Version*_ : ${config.VERSION}
 ┃${star}│
 ┃${star}│
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃${star}│   ${BOT_INFO.split(";")[0]}
 ┃${star}│ 
 ┃${star}╰───────────────
@@ -133,9 +126,9 @@ Module({
   desc: 'Measures ping'
 }, (async (message, match) => {
   const start = new Date().getTime()
-  let sent_msg = await message.sendReply('*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*')
+  let sent_msg = await message.sendReply('*❮ Testing Ping ❯*')
   const end = new Date().getTime()
-  await message.edit('*ʟᴀᴛᴇɴᴄʏ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
+  await message.edit('*Pong!: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
 }));
 Module({
   pattern: 'uptime',
