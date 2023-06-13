@@ -1,5 +1,5 @@
-# _Raganork-multi-device_
-## _Multi device whatsapp bot created with [@adiwajshing/baileys](https://github.com/adiwajshing/Baileys)_
+# _TEAM DLK MD multi device_
+## _Multi device whatsapp bot 
   
 <div align="center">
    
