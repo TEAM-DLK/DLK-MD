@@ -16,7 +16,7 @@ module.exports = {
     ALIVE: process.env.ALIVE || "https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive 
 Uptime: {uptime}
 *~____________________________________~*
-BOT RUNTIME *• {uptime} •*
+ *• TEAM-DLK-MD •*
 *~____________________________________~*
 
  UPDATE GROUP
