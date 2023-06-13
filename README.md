@@ -1,5 +1,5 @@
 # _TEAM DLK MD multi device_
-## _Multi device whatsapp bot 
+
   
 <div align="center">
    
@@ -9,3 +9,11 @@
 <br>
 
 
+
+  
+  - [SESSION STRING]([https://raganork.ml})
+
+ 
+- DEPLOY TO HEROKU
+
+[![DEPLOY](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-DLK/DOOZY-MUSIC)
