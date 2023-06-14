@@ -76,7 +76,7 @@
         "ALIVE": {
             "description": "Alive message {image/link}, {sender} can also be used",
             "required": false,
-            "value":"https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\n*GITHUB FLOW NOW*\nhttps://github.com/TEAM-DLK/DLK-MD\n\n*~____________________________________~*"
+            "value":"https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\n*GITHUB FLOW NOW*\nhttps://github.com/TEAM-DLK\n\n*~____________________________________~*"
         },
        "SESSION": {
             "description": "Your MD session",
