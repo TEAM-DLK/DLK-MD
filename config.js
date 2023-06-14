@@ -13,7 +13,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v3.0.0',
-    ALIVE: process.env.ALIVE || "https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\nhttps://github.com/TEAM-DLK/DLK-MD\n\n*~____________________________________~",
+    ALIVE: process.env.ALIVE || "https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\n*GITHUB FLOW NOW*\nhttps://github.com/TEAM-DLK/DLK-MD\n\n*~____________________________________~*",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
