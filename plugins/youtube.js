@@ -367,13 +367,13 @@ Module({
   if (message.reply_message){
     try { 
   let reply = message.reply_message?.text || message.quoted?.message?.imageMessage?.caption;
-    if (reply!==undefined && !!reply && message.quoted.key.id.startsWith("RGNK") && message.quoted.key.participant.includes(message.myjid)){
+    if (reply!==undefined && !!reply && (message.quoted.key.id.startsWith("RGNK") || message.quoted.key.id.startsWith("BAE")) && message.quoted.key.participant.includes(message.myjid)){
       let no_ = /\d+/.test(message.message) ? message.message.match(/\d+/)[0] : false
       let onOrOff = (message.message.toLowerCase().includes('on') || message.message.toLowerCase().includes('off')) ? message.message.toLowerCase().trim() : false
-      if (onOrOff){
+      if (onOrOff && message.fromOwner){
         let action = onOrOff == 'on'?'true':'false';
-      let set_action = reply.split('\n')[0].replace(/(\*\_|_\*)/g,"")
-      if (configs.map(e=>e.title).includes(set_action)){
+        let set_action = reply.split('\n')[0].replace(/(\*\_|_\*)/g,"")
+        if (configs.map(e=>e.title).includes(set_action)){
         let {env_var} = configs.filter(e=>e.title==set_action)[0]
         await message.sendReply(`*${set_action} ${(onOrOff == 'on'?"enabled ✅":"disabled ❌")}*`)
         await setVar(env_var.trim(),action)
@@ -406,13 +406,13 @@ Module({
           }
           if (reply?.includes("Subtitles matching")){
               let query = await parseReply(reply,no_);
-              let res = (await require("axios")(`https://raganork.ml/api/subtitles?query=${query}`)).data
+              let res = (await require("axios")(`https://raganork.tk/api/subtitles?query=${query}`)).data
               if (res.length) res = res.filter(x=>x.title == query)
-              res = (await require("axios")(`https://raganork.ml/api/subtitles?query=${res[0].url}`)).data
+              res = (await require("axios")(`https://raganork.tk/api/subtitles?query=${res[0].url}`)).data
               if (res.length && !('dl_url' in res)) 
               {
                 res = res.filter(x=>x.title == query)
-                res = (await require("axios")(`https://raganork.ml/api/subtitles?query=${res[0].url}`)).data
+                res = (await require("axios")(`https://raganork.tk/api/subtitles?query=${res[0].url}`)).data
               }
               if ('dl_url' in res) {
                 return await message.client.sendMessage(message.jid,{document: {url: res.dl_url},fileName:res.title+'.srt',caption:'_*Here\'s your subtitle file!*_',mimetype:'application/x-subrip'},{quoted:message.data})
