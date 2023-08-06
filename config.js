@@ -8,23 +8,39 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env'
 function convertToBool(text, fault = 'true',fault2='on') {
     return ((text === fault) || (text === fault2));
 }
+const settingsMenu = [
+    {title: "PM antispam block", env_var: "PM_ANTISPAM"},
+    {title: "Auto read all messages", env_var: "READ_MESSAGES"},
+    {title: "Auto read command messages", env_var: "READ_COMMAND"},
+    {title: "Auto read status updates", env_var: "AUTO_READ_STATUS"},
+    {title: "Admin sudo acces mode (group commands only)", env_var: "ADMIN_ACCESS"},
+    {title: "With & without handler mode", env_var: "MULTI_HANDLERS"},
+    {title: "Auto reject calls", env_var: "REJECT_CALLS"},
+    {title: "Always online", env_var: "ALWAYS_ONLINE"},
+    {title: "PM Auto blocker", env_var: "PMB_VAR"},
+    {title: "Disable bot in PM", env_var: "DIS_PM"}
+  ]
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
-    VERSION: 'v3.0.0',
+    VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\n*GITHUB FOLLOW NOW*\nhttps://github.com/TEAM-DLK\n\n*~____________________________________~*",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
+    PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
+    MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
+    ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(edit AUTOMUTE_MSG)_',
+    ANTIWORD_WARN: process.env.ANTIWORD_WARN || '',
     ANTI_SPAM: process.env.ANTI_SPAM || '919074309534-1632403322@g.us',
     MULTI_HANDLERS: convertToBool(process.env.MULTI_HANDLERS) || false,
     DISABLED_COMMANDS: (process.env.DISABLED_COMMANDS ? process.env.DISABLED_COMMANDS.split(",") : undefined) || [],
     ANTI_BOT: process.env.ANTI_BOT || '',
     ANTISPAM_COUNT: process.env.ANTISPAM_COUNT || '6/10', // msgs/sec
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group auto unmuted!_\n_(edit AUTOUNMUTE_MSG)_',
-    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || true,
+    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || false,
     READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || false,
     PMB_VAR: convertToBool(process.env.PMB_VAR) || false,
     DIS_PM: convertToBool(process.env.DIS_PM) || false,
@@ -40,8 +56,8 @@ module.exports = {
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "TEAM-DLK",
-    BOT_NAME: process.env.BOT_NAME || 'DJ DOOZY',
+    STICKER_DATA: process.env.STICKER_DATA || "Raganork",
+    BOT_NAME: process.env.BOT_NAME || 'Raganork',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'TEAM-DLK;DJ DOOZY;https://i.imgur.com/7sa8HlR.jpg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
@@ -58,5 +74,6 @@ module.exports = {
     LANGUAGE: process.env.LANGUAGE || 'english',
     DEBUG: DEBUG,
     ACR_A: "ff489a0160188cf5f0750eaf486eee74",
-    ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp"
+    ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp",
+    settingsMenu
 };
