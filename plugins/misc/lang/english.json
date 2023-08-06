@@ -51,12 +51,12 @@
             "JID_DESC": "Gives jid of chat/user.",
             "GROUP_COMMAND": "_Group command!_",
             "WARN_DESC": "Gives warning. Kicks member if limit is over",
-            "WARNING": "     ⚠️ WARNING  ⚠️",
-            "USER": "*User:* ```{}```",
-            "REMAINING": "*Remaining:* ```{}```",
-            "REASON": "*Reason:* ```{}```",
-            "WARN_RESET": "_Reset warns, {} remaining for_ _{}_",
-            "WARN_OVER": "_Max warns reached, {} Kicked_"
+            "WARNING": "     *⚠️ WARNING  ⚠️*",
+            "USER": "_User:_ {}",
+            "REMAINING": "_Remaining: {}_",
+            "REASON": "_Reason: {}_",
+            "WARN_RESET": "_Reset warns, {} more remaining for_ {}",
+            "WARN_OVER": "_Max warns ({}) reached, {} kicked out!_"
         },
         "afk": {
             "AFK_DESC": "It makes you AFK - Away From Keyboard.",
@@ -116,7 +116,7 @@
         },
         "greetings": {
             "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
-            "NOT_SET_WELCOME": "_No welcome messages set",
+            "NOT_SET_WELCOME": "_No welcome messages set! Check wiki: https://github.com/souravkl11/raganork-md/wiki/Welcome_",
             "WELCOME_ALREADY_SETTED": "_Already set!_\n",
             "NEED_WELCOME_TEXT": "_Need a message._",
             "WELCOME_DELETED": "_Welcome disabled!_",
@@ -181,7 +181,7 @@
             "SEARCHING": "Searching",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for images on Google.",
-            "IMG": "Uploading {} results for {}",
+            "IMG": "_Uploading {} results for {}_",
             "MATCHING_SONGS": "Matching songs from YouTube",
             "YTS_DESC": "Select videos in youtube",
             "YTS_RESULTS": "Search results from YouTube",
