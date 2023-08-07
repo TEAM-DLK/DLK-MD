@@ -27,7 +27,7 @@ module.exports = {
     VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\n*GITHUB FOLLOW NOW*\nhttps://github.com/TEAM-DLK\n\n*~____________________________________~*",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
-    PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || false,
+    PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || true,
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
     MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
     ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
@@ -40,7 +40,7 @@ module.exports = {
     ANTI_BOT: process.env.ANTI_BOT || '',
     ANTISPAM_COUNT: process.env.ANTISPAM_COUNT || '6/10', // msgs/sec
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group auto unmuted!_\n_(edit AUTOUNMUTE_MSG)_',
-    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || false,
+    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || true,
     READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || false,
     PMB_VAR: convertToBool(process.env.PMB_VAR) || false,
     DIS_PM: convertToBool(process.env.DIS_PM) || true,
