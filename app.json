@@ -78,6 +78,11 @@
             "required": false,
             "value":"https://i.imgur.com/7sa8HlR.jpg Hey {sender}, I'm alive \n\nUptime: {uptime}\n\n*• TEAM-DLK-MD •*\n\n*~____________________________________~*\nUPDATE GROUP\nhttps://chat.whatsapp.com/CCmIhpmkxIN5hR83vw3sdY\n\n*GITHUB FOLLOW NOW*\nhttps://github.com/TEAM-DLK\n\n*~____________________________________~*"
         },
+        "OPENAI_KEY": {
+            "description": "OpenAI API key found. Get an API key",
+            "required": false,
+            "value":"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"
+        },  
        "SESSION": {
             "description": "Your MD session",
             "required": true
